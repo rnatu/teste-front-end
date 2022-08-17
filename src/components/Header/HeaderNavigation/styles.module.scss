@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+
+.listItem {
+  display: flex;
+  align-items: center;
+
+  &.active {
+    svg, a {
+      color: $primary-color;
+    }
+  }
+
+  svg {
+    color: $gray-100;
+    margin-right: .625rem;
+  }
+
+  a {
+    color: $gray-100;
+    text-transform: uppercase;   
+
+    &:hover {
+      filter: brightness(0.7);
+      transform: transition;
+    }
+  }
+}
