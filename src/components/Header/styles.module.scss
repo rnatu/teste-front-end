@@ -3,6 +3,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  border-radius: 0 0 10px 10px;
 
   .info {
     height: 2rem;
@@ -91,14 +92,11 @@
 
   .usersNav {
     display: flex;
-    height: 38px;
-
-    width: 13.5rem;
+    height: 2.375rem;
+    gap: 2rem;
 
     align-items: center;
     justify-content: space-between;
-
-    width: 13.5rem;
 
     color: $gray-100;
 
@@ -108,11 +106,11 @@
   }
 
   .navLinks {
-    padding: .6875rem;
+    padding: .6875rem 3.4375rem;
     ul {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
 
       font-size: .75rem;
       font-weight: $poppins-semibold;

@@ -19,8 +19,10 @@ export function HeaderNavigation({
 }: HeaderNavigationProps) {
   return (
     <li className={`${styles.listItem} ${active ? styles.active : ''}`}>
-      {icon && React.createElement(icon, { size: 20, weight: 'bold' })}
-      <a href={url}>{linkTitle}</a>
+      <a href={url}>
+        {icon && React.createElement(icon, { size: 20, weight: 'bold' })}
+        {linkTitle}
+      </a>
     </li>
   );
 }

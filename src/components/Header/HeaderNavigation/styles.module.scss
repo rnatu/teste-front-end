@@ -1,9 +1,6 @@
 @import "../../../styles/variables";
 
-.listItem {
-  display: flex;
-  align-items: center;
-
+.listItem { 
   &.active {
     svg, a {
       color: $primary-color;
@@ -16,8 +13,14 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: $gray-100;
     text-transform: uppercase;   
+
+    // padding: 0 32px;
 
     &:hover {
       filter: brightness(0.7);
