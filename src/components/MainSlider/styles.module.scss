@@ -1,0 +1,73 @@
+@import "../../styles/variables";
+
+.mainImageBackground {
+  height: 30.625rem;
+  margin-top: 30px;
+
+
+  background-size: cover;
+  background-position: center;
+
+  .shadowMask {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.322) 10%, rgba(0, 0, 0, 0) 25%);
+    height: 100%;
+
+    .opacityMask {
+      background: #4d3f1923;
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      position: relative;
+    }
+  }
+}
+
+.mainSliderContainer {
+  width: 24.1875rem;
+  height: 15.75rem;
+
+  margin-left: 144px;
+
+  h1 {
+    color: $white;
+    font-size: 2.5rem;
+    font-weight: $poppins-extrabold-800;
+    line-height: 3.75rem;
+  }
+
+  a {
+    display: inline-block;
+    background-color: $primary-color;
+    padding: 0.75rem 1.5rem;
+
+    margin-top: 1.5rem;
+
+    font-weight: $poppins-black-900;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $white;
+
+    border-radius: 10px;
+    border-color: $secondary-color;
+    letter-spacing: 1px;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+}
+
+.caretLeft {
+  position: absolute;
+  top: 1;
+  left: 56px;
+}
+.caretRight {
+  position: absolute;
+  top: 1;
+  right: 56px;
+}

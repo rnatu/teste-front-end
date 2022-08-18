@@ -14,17 +14,14 @@
 
   a {
     display: flex;
-    align-items: center;
-    justify-content: center;
 
     color: $gray-100;
     text-transform: uppercase;   
 
-    // padding: 0 32px;
+    padding: 0 10px;
 
     &:hover {
       filter: brightness(0.7);
-      transform: transition;
     }
   }
 }

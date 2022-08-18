@@ -1,9 +1,13 @@
 import { Header } from './components/Header';
+import { MainSlider } from './components/MainSlider';
+
+import styles from './App.module.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <Header />
+      <MainSlider />
     </div>
   );
 }
